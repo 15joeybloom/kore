@@ -1,5 +1,5 @@
 {-|
-Module      : Kore.AST.Common
+Module      : Kore.AST.Sentence
 Description : Data Structures for representing the Kore language AST that do not
               need unified constructs (see Kore.AST.Kore for the unified
               ones).
@@ -40,10 +40,7 @@ import Kore.AST.Common
 import Kore.AST.Kore
 import Kore.AST.MetaOrObject
 
-{-|'Attributes' corresponds to the @attributes@ Kore syntactic declaration.
-It is parameterized by the types of Patterns, @pat@.
--}
-
+{-|'Attributes' corresponds to the @attributes@ Kore syntactic declaration.-}
 newtype Attributes =
     Attributes { getAttributes :: [CommonKorePattern] }
   deriving (Eq, Generic, Show)
@@ -55,7 +52,7 @@ instance Default Attributes where
 
 {-|'SentenceAlias' corresponds to the @object-alias-declaration@ and
 @meta-alias-declaration@ syntactic categories from the Semantics of K,
-Section 9.1.6 (Declaration and Definitions).
+Section 9.1.6 (Kore Modules and Declarations).
 
 The 'level' type parameter is used to distiguish between the meta- and object-
 versions of symbol declarations. It should verify 'MetaOrObject level'.
@@ -78,7 +75,7 @@ instance
 
 {-|'SentenceSymbol' corresponds to the @object-symbol-declaration@ and
 @meta-symbol-declaration@ syntactic categories from the Semantics of K,
-Section 9.1.6 (Declaration and Definitions).
+Section 9.1.6 (Kore Modules and Declarations).
 
 The 'level' type parameter is used to distiguish between the meta- and object-
 versions of symbol declarations. It should verify 'MetaOrObject level'.
@@ -95,7 +92,7 @@ data SentenceSymbol level (pat :: (* -> *) -> * -> *) (variable :: * -> *)
 instance NFData (SentenceSymbol level pat variable)
 
 {-|'ModuleName' corresponds to the @module-name@ syntactic category
-from the Semantics of K, Section 9.1.6 (Declaration and Definitions).
+from the Semantics of K, Section 9.1.6 (Kore Modules and Declarations).
 -}
 newtype ModuleName = ModuleName { getModuleName :: Text }
     deriving (Eq, Generic, Ord, Show)
@@ -106,7 +103,7 @@ getModuleNameForError :: ModuleName -> String
 getModuleNameForError = Text.unpack . getModuleName
 
 {-|'SentenceImport' corresponds to the @import-declaration@ syntactic category
-from the Semantics of K, Section 9.1.6 (Declaration and Definitions).
+from the Semantics of K, Section 9.1.6 (Kore Modules and Declarations).
 -}
 data SentenceImport (pat :: (* -> *) -> * -> *) (variable :: * -> *)
   = SentenceImport
@@ -118,7 +115,7 @@ data SentenceImport (pat :: (* -> *) -> * -> *) (variable :: * -> *)
 instance NFData (SentenceImport pat variable)
 
 {-|'SentenceSort' corresponds to the @sort-declaration@ syntactic category
-from the Semantics of K, Section 9.1.6 (Declaration and Definitions).
+from the Semantics of K, Section 9.1.6 (Kore Modules and Declarations).
 -}
 data SentenceSort level (pat :: (* -> *) -> * -> *) (variable :: * -> *)
   = SentenceSort
@@ -131,7 +128,7 @@ data SentenceSort level (pat :: (* -> *) -> * -> *) (variable :: * -> *)
 instance NFData (SentenceSort level pat variable)
 
 {-|'SentenceAxiom' corresponds to the @axiom-declaration@ syntactic category
-from the Semantics of K, Section 9.1.6 (Declaration and Definitions).
+from the Semantics of K, Section 9.1.6 (Kore Modules and Declarations).
 -}
 data SentenceAxiom sortParam (pat :: (* -> *) -> * -> *) (variable :: * -> *)
   = SentenceAxiom
@@ -148,7 +145,7 @@ instance
     NFData (SentenceAxiom sortParam pat variable)
 
 {-|@SentenceHook@ corresponds to @hook-declaration@ syntactic category
-from the Semantics of K, Section 9.1.6 (Declaration and Definitions).
+from the Semantics of K, Section 9.1.6 (Kore Modules and Declarations).
 Note that we are reusing the 'SentenceSort' and 'SentenceSymbol' structures to
 represent hooked sorts and hooked symbols.
 -}
@@ -160,7 +157,7 @@ data SentenceHook level (pat :: (* -> *) -> * -> *) (variable :: * -> *)
 instance NFData (SentenceHook level pat variable)
 
 {-|The 'Sentence' type corresponds to the @declaration@ syntactic category
-from the Semantics of K, Section 9.1.6 (Declaration and Definitions).
+from the Semantics of K, Section 9.1.6 (Kore Modules and Declarations).
 
 The @symbol-declaration@ and @alias-declaration@ categories were also merged
 into 'Sentence', using the @level@ parameter to distinguish the 'Meta' and
@@ -252,9 +249,8 @@ sentenceAttributes =
 {-|A 'Module' consists of a 'ModuleName' a list of 'Sentence's and some
 'Attributes'.
 
-They correspond to the second, third and forth non-terminals of the @definition@
-syntactic category from the Semantics of K, Section 9.1.6
-(Declaration and Definitions).
+This corresponds the @module@ syntactic category from the Semantics of K,
+Section 9.1.6 (Kore Modules and Declarations).
 -}
 data Module sentence sortParam (pat :: (* -> *) -> * -> *) (variable :: * -> *)
   = Module
@@ -268,14 +264,10 @@ instance
     NFData (sentence sortParam pat variable) =>
     NFData (Module sentence sortParam pat variable)
 
-{-|Currently, a 'Definition' consists of some 'Attributes' and a 'Module'
+{-|A 'Definition' consists of some 'Attributes' and a list of 'Module's.
 
-Because there are plans to extend this to a list of 'Module's, the @definition@
-syntactic category from the Semantics of K, Section 9.1.6
-(Declaration and Definitions) is splitted here into 'Definition' and 'Module'.
-
-'definitionAttributes' corresponds to the first non-terminal of @definition@,
-while the remaining three are grouped into 'definitionModules'.
+This corresponds to the @definition@ syntactic category from the Semantics of K,
+Section 9.1.7 (Kore Definitions).
 -}
 data Definition sentence sortParam (pat :: (* -> *) -> * -> *) (variable :: * -> *)
   = Definition
@@ -349,7 +341,7 @@ type KoreSentenceSort level = SentenceSort level UnifiedPattern Variable
 type KoreSentenceHook = SentenceHook Object UnifiedPattern Variable
 
 {-|'UnifiedPattern' is joining the 'Meta' and 'Object' versions of 'Sentence',
-to allow using toghether both 'Meta' and 'Object' sentences.
+to allow using together both 'Meta' and 'Object' sentences.
 -}
 newtype UnifiedSentence sortParam pat variable = UnifiedSentence
     { getUnifiedSentence :: Unified (Rotate41 Sentence sortParam pat variable) }
@@ -391,7 +383,7 @@ deriving instance
 
 -- |'KoreSentence' instantiates 'UnifiedSentence' to describe sentences fully
 -- corresponding to the @declaration@ syntactic category
--- from the Semantics of K, Section 9.1.6 (Declaration and Definitions).
+-- from the Semantics of K, Section 9.1.6 (Kore Modules and Declarations).
 type KoreSentence = UnifiedSentence UnifiedSortVariable UnifiedPattern Variable
 
 constructUnifiedSentence
@@ -412,9 +404,9 @@ applyUnifiedSentence _ objectT (UnifiedSentence (UnifiedObject rs)) =
     objectT (unRotate41 rs)
 
 
--- |'KoreModule' fully instantiates 'Module' to correspond to the second, third,
--- and forth non-terminals of the @definition@ syntactic category from the
--- Semantics of K, Section 9.1.6 (Declaration and Definitions).
+-- |'KoreModule' fully instantiates 'Module' to correspond to the @module@
+-- syntactic category from the Semantics of K, Section 9.1.6 (Kore Modules and
+-- Declarations).
 type KoreModule =
     Module UnifiedSentence UnifiedSortVariable UnifiedPattern Variable
 
