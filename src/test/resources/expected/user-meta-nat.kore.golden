@@ -16,7 +16,7 @@ Definition
                             , symbolParams = []
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "#Nat" AstLocationNone) :: Id Meta
                             , sortActualSorts = []
@@ -35,7 +35,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "#Nat" AstLocationNone) :: Id Meta
                             , sortActualSorts = []

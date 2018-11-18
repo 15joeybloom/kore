@@ -16,7 +16,7 @@ Definition
                             , symbolParams = []
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Bool" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -30,7 +30,7 @@ Definition
                             , symbolParams = []
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Bool" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -53,7 +53,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Bool" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -72,7 +72,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Bool" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -618,7 +618,7 @@ Definition
                             , symbolParams = []
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Int" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -637,7 +637,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Int" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -651,7 +651,7 @@ Definition
                             , symbolParams = []
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Int" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -665,7 +665,7 @@ Definition
                             , symbolParams = []
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Int" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -679,7 +679,7 @@ Definition
                             , symbolParams = []
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Int" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -702,7 +702,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Int" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -725,7 +725,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Int" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -748,7 +748,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Int" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -771,7 +771,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Bool" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -794,7 +794,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Bool" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -823,7 +823,7 @@ Definition
                                 ]
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "List" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -849,7 +849,7 @@ Definition
                                 ]
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "List" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -880,7 +880,7 @@ Definition
                                 ]
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "List" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -900,7 +900,7 @@ Definition
                     , sentenceSymbolSorts =
                         [ SortVariableSort (SortVariable ((Id "S" AstLocationNone) :: Id Object))
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "List" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -936,7 +936,7 @@ Definition
                                 ]
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Set" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -956,7 +956,7 @@ Definition
                     , sentenceSymbolSorts =
                         [ SortVariableSort (SortVariable ((Id "S" AstLocationNone) :: Id Object))
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Set" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -987,7 +987,7 @@ Definition
                                 ]
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Set" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -1013,7 +1013,7 @@ Definition
                                 ]
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Bool" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -1114,7 +1114,7 @@ Definition
                         [ SortVariableSort (SortVariable ((Id "S1" AstLocationNone) :: Id Object))
                         , SortVariableSort (SortVariable ((Id "S2" AstLocationNone) :: Id Object))
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Map" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -1134,7 +1134,7 @@ Definition
                                 ]
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Map" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -1169,7 +1169,7 @@ Definition
                                 ]
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Map" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -1197,7 +1197,7 @@ Definition
                                 ]
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Set" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -1225,7 +1225,7 @@ Definition
                             }
                         , SortVariableSort (SortVariable ((Id "S1" AstLocationNone) :: Id Object))
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortVariableSort (SortVariable ((Id "S2" AstLocationNone) :: Id Object))
                     , sentenceSymbolAttributes = Attributes []
                     })
@@ -1249,7 +1249,7 @@ Definition
                         , SortVariableSort (SortVariable ((Id "S1" AstLocationNone) :: Id Object))
                         , SortVariableSort (SortVariable ((Id "S2" AstLocationNone) :: Id Object))
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Map" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -1279,7 +1279,7 @@ Definition
                         , SortVariableSort (SortVariable ((Id "S1" AstLocationNone) :: Id Object))
                         , SortVariableSort (SortVariable ((Id "S2" AstLocationNone) :: Id Object))
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Map" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -1317,7 +1317,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Id" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -1448,7 +1448,7 @@ Definition
                             }
                         , SortVariableSort (SortVariable ((Id "S1" AstLocationNone) :: Id Object))
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortVariableSort (SortVariable ((Id "S2" AstLocationNone) :: Id Object))
                     , sentenceSymbolAttributes = Attributes []
                     })
@@ -1465,7 +1465,7 @@ Definition
                         [ SortVariableSort (SortVariable ((Id "S1" AstLocationNone) :: Id Object))
                         , SortVariableSort (SortVariable ((Id "S2" AstLocationNone) :: Id Object))
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Ctxt" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -1668,7 +1668,7 @@ Definition
                                 ]
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Ctxt" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -1907,7 +1907,7 @@ Definition
                     , sentenceSymbolSorts =
                         [ SortVariableSort (SortVariable ((Id "S" AstLocationNone) :: Id Object))
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "K" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -2121,7 +2121,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "K" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -2135,7 +2135,7 @@ Definition
                             , symbolParams = []
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "K" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -2732,7 +2732,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "AExp" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -2913,7 +2913,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "AExp" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -3094,7 +3094,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "AExp" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -3188,7 +3188,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "AExp" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -4050,7 +4050,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "AExp" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -4913,7 +4913,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "BExp" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -5098,7 +5098,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "BExp" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -5992,7 +5992,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "BExp" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -6361,7 +6361,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "BExp" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -6760,7 +6760,7 @@ Definition
                             , symbolParams = []
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Block" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -6779,7 +6779,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Block" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -6803,7 +6803,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Stmt" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -6826,7 +6826,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Stmt" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -7233,7 +7233,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Stmt" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -7668,7 +7668,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Stmt" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -7691,7 +7691,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Stmt" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -7724,7 +7724,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Pgm" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -7748,7 +7748,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Cfg" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -7776,7 +7776,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "TopCell" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -7800,7 +7800,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "KCell" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -7833,7 +7833,7 @@ Definition
                                 ]
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "StateCell" AstLocationNone) :: Id Object
                             , sortActualSorts = []

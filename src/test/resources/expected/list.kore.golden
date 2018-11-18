@@ -20,7 +20,7 @@ Definition
                                 ]
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "List" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -46,7 +46,7 @@ Definition
                                 ]
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "List" AstLocationNone) :: Id Object
                             , sortActualSorts =
@@ -77,7 +77,7 @@ Definition
                                 ]
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "List" AstLocationNone) :: Id Object
                             , sortActualSorts =

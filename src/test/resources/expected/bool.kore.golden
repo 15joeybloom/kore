@@ -16,7 +16,7 @@ Definition
                             , symbolParams = []
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Bool" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -30,7 +30,7 @@ Definition
                             , symbolParams = []
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Bool" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -53,7 +53,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Bool" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -76,7 +76,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Bool" AstLocationNone) :: Id Object
                             , sortActualSorts = []
@@ -95,7 +95,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Bool" AstLocationNone) :: Id Object
                             , sortActualSorts = []

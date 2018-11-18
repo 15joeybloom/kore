@@ -13,7 +13,7 @@ Definition
                                 ]
                             }
                     , sentenceSymbolSorts = []
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortVariableSort (SortVariable ((Id "S" AstLocationNone) :: Id Object))
                     , sentenceSymbolAttributes = Attributes []
                     })

@@ -15,7 +15,7 @@ Definition
                     , sentenceAliasSorts =
                         [ SortVariableSort (SortVariable ((Id "s" AstLocationNone) :: Id Object))
                         ]
-                    , sentenceAliasReturnSort =
+                    , sentenceAliasResultSort =
                         SortVariableSort (SortVariable ((Id "s" AstLocationNone) :: Id Object))
                     , sentenceAliasLeftPattern =
                         ApplicationPattern Application

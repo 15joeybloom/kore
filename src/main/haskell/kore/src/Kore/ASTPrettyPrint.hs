@@ -563,7 +563,7 @@ instance
             [ writeFieldNewLine "sentenceAliasAlias" sentenceAliasAlias sa
             , writeListField "sentenceAliasSorts" sentenceAliasSorts sa
             , writeFieldNewLine
-                "sentenceAliasReturnSort" sentenceAliasResultSort sa
+                "sentenceAliasResultSort" sentenceAliasResultSort sa
             , writeFieldNewLine "sentenceAliasLeftPattern" sentenceAliasLeftPattern sa
             , writeFieldNewLine "sentenceAliasRightPattern" sentenceAliasRightPattern sa
             , writeAttributesField
@@ -581,7 +581,7 @@ instance
             [ writeFieldNewLine "sentenceSymbolSymbol" sentenceSymbolSymbol sa
             , writeListField "sentenceSymbolSorts" sentenceSymbolSorts sa
             , writeFieldNewLine
-                "sentenceSymbolReturnSort" sentenceSymbolResultSort sa
+                "sentenceSymbolResultSort" sentenceSymbolResultSort sa
             , writeAttributesField
                 "sentenceSymbolAttributes" (sentenceSymbolAttributes sa)
             ]

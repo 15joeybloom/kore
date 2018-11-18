@@ -16,7 +16,7 @@ Definition
                         [ SortVariableSort (SortVariable ((Id "S" AstLocationNone) :: Id Object))
                         , SortVariableSort (SortVariable ((Id "S" AstLocationNone) :: Id Object))
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortVariableSort (SortVariable ((Id "S" AstLocationNone) :: Id Object))
                     , sentenceSymbolAttributes = Attributes []
                     })
@@ -32,7 +32,7 @@ Definition
                         [ SortVariableSort (SortVariable ((Id "S" AstLocationNone) :: Id Object))
                         , SortVariableSort (SortVariable ((Id "S" AstLocationNone) :: Id Object))
                         ]
-                    , sentenceAliasReturnSort =
+                    , sentenceAliasResultSort =
                         SortVariableSort (SortVariable ((Id "S" AstLocationNone) :: Id Object))
                     , sentenceAliasLeftPattern =
                         ApplicationPattern Application

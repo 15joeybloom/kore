@@ -23,7 +23,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortVariableSort (SortVariable ((Id "S" AstLocationNone) :: Id Object))
                     , sentenceSymbolAttributes = Attributes []
                     })
@@ -41,7 +41,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceAliasReturnSort =
+                    , sentenceAliasResultSort =
                         SortVariableSort (SortVariable ((Id "S" AstLocationNone) :: Id Object))
                     , sentenceAliasLeftPattern =
                         ApplicationPattern Application

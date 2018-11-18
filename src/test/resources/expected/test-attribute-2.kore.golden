@@ -37,7 +37,7 @@ Definition
                             , sortActualSorts = []
                             }
                         ]
-                    , sentenceSymbolReturnSort =
+                    , sentenceSymbolResultSort =
                         SortActualSort SortActual
                             { sortActualName = (Id "Nat" AstLocationNone) :: Id Object
                             , sortActualSorts = []
